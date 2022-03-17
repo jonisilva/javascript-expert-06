@@ -1,7 +1,8 @@
 const defaultConfig = {
+  verbose: true,
   coverageDirectory: "coverage",
   coverageProvider: "v8",
-  coverageReports: [
+  coverageReporters: [
     "text",
     "lcov",
   ],
@@ -23,7 +24,7 @@ const defaultConfig = {
 }
 
 export default {
-  project: [
+  projects: [
     {
     ...defaultConfig,
     testEnvironment: "node",
